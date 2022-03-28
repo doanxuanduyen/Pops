@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POPS</title>
+    <link rel="stylesheet" href="../css/css__more/more.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__nav">
+                <a href="../../index.html"><img src="../img/pops_logo.png" alt="logo"></a>
+                <ul class="header__nav__items">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Children</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Comics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Movie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="more.html">More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__user">
+                <div class="searchbar">
+                    <div class="input__searchbar">
+                        <input onclick="functionSuggest()" type="text"
+                            placeholder="Movie name, anime, comic, actor, artist...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="suggests" id="suggests">
+                        <div class="suggest">
+                            <p class="title">Video</p>
+                            <div class="suggest__names">
+                                <p class="suggest__name">Black Cover</p>
+                                <p class="suggest__name">Naruto Shippuden</p>
+                                <p class="suggest__name">One Piece</p>
+                                <p class="suggest__name">Security Angel</p>
+                                <p class="suggest__name">GroovingOn</p>
+                            </div>
+                        </div>
+                        <div class="suggest">
+                            <p class="title">Comic</p>
+                            <div class="suggest__names">
+                                <p class="suggest__name">BL</p>
+                                <p class="suggest__name">Back Luck</p>
+                                <p class="suggest__name">Price of Haven</p>
+                                <p class="suggest__name">Mama, I meet home</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="user user__login">
+                    <a href="./source/html/login.html">Login</a>
+                </button>
+                <button class="user user__registration">
+                    <a href="./source/html/registration.html">Registration</a>
+                </button>
+                <div class="account" onclick="showAccount()">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="account__setting">
+                        <ul class="account__down" id="account__down">
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-ban"></i>
+                                <p class="item">Buy packet</p>
+                            </li>
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <p class="item">Free data</p>
+                            </li>
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-square-check"></i>
+                                <p class="item">Favorite</p>
+                            </li>
+                            <hr class="hr--account">
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-gear"></i>
+                                <p class="item">Setting</p>
+                            </li>
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-message"></i>
+                                <p class="item">Feedback</p>
+                            </li>
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-address-card"></i>
+                                <p class="item">About our</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <hr class="hr--footer">
+                <div class="footer__top__header">Home</div>
+                <div class="footer__top__title">100% copyrighted entertainment application with hot and diverse movie
+                    store.
+                    POPS brings you the latest good movies, anime cartoons, comedies, comics.
+                </div>
+            </div>
+            <div class="footer__main">
+                <div class="footer__main__top">
+                    <div class="introduction">
+                        <img src="../img/pops_logo.png">
+                        <p class="introduction__title">A social network that shares high-quality entertainment video
+                            content, suitable for all ages and safe for children.
+                        </p>
+                        <div class="introduction__link">
+                            <img src="../img/link--network/appstore.png">
+                            <img src="../img/link--network/googleplay.png">
+                            <img src="../img/link--network/smartTV.png">
+                        </div>
+                    </div>
+                    <div class="content--nav">
+                        <div class="mature__content">
+                            <h3 class="mature__content__header">MATURE CONTENT</h3>
+                            <div class="mature__content__big__items">
+                                <ul class="mature__content__items left">
+                                    <li class="mature__content__items__item">Home</li>
+                                    <li class="mature__content__items__item">Comic</li>
+                                    <li class="mature__content__items__item">Original</li>
+                                    <li class="mature__content__items__item">Anime</li>
+                                    <li class="mature__content__items__item">Show</li>
+                                </ul>
+                                <ul class="mature__content__items right">
+                                    <li class="mature__content__items__item">Music</li>
+                                    <li class="mature__content__items__item">Series</li>
+                                    <li class="mature__content__items__item">Children</li>
+                                    <li class="mature__content__items__item">Blog</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="children__content">
+                            <h3 class="children__content__header">CHILDREN CONTENT</h3>
+                            <ul class="children__content__items">
+                                <li class="children__content__items__item">Home</li>
+                                <li class="children__content__items__item">Music</li>
+                                <li class="children__content__items__item">Original</li>
+                                <li class="children__content__items__item">Education</li>
+                                <li class="children__content__items__item">Blog children</li>
+                            </ul>
+                        </div>
+                        <div class="support">
+                            <h3 class="support__header">SUPPORT</h3>
+                            <ul class="support__items">
+                                <li class="support__items__item">FAQs</li>
+                                <li class="support__items__item">Privacy Policy</li>
+                                <li class="support__items__item">Terms and Conditions of Use</li>
+                                <li class="support__items__item">Terms of payment</li>
+                                <li class="support__items__item">Complaint Handling Policy and Procedure</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <p class="information__header">VIETNAM PHU SIOC JOINT STOCK COMPANY</p>
+                        <p class="information__item address">Address: 4th Floor, Block A, Viettel Complex Tower, 285 Cach Mang Thang Tam, Ward 12, District 10, Ho Chi Minh City</p>
+                        <p class="information__item phone">Number-phone: +84 (28) 62921652</p>
+                        <p class="information__item email">Email: popsapp-support@popsww.com</p>
+                    </div>
+                </div>
+                <hr class="hr--footer">
+                <div class="footer__main__bottom">
+                    <div class="title">
+                        <p class="line">Person responsible for the content: Dinh Thi Hong Hoa</p>
+                        <p class="line">Business registration certificate number 0305709591 issued by the Department of Planning and Investment of Ho Chi Minh City. Ho Chi Minh City issued on May 21, 2008</p>
+                        <p class="line">License to establish a social network No. 63/GP-BTTTT issued by the Ministry of Information and Communications on 22/02/2019</p>
+                        <p class="line">© 2018 POPS Worldwide. All copyrights belong to POPS Worldwide.</p>
+                    </div>
+                    <img src="../img/footer.png" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/script--main.js"></script>
+</body>
+</html>

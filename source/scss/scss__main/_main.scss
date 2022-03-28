@@ -1,0 +1,418 @@
+@import "../scss__basic/reset";
+@import "../scss__basic/variable";
+.main {
+    &__sliders {
+        position: relative;
+        & .main__slider {
+            position: relative;
+            list-style-type: none;
+            & .slider__banner {
+                position: absolute;
+                width: 100%;
+                & .slider__banner__img {
+                    & img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100vh;
+                        object-fit: cover;
+                    }
+                }
+                & .model__overlay {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100vh;
+                    background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.884));
+                }
+                & .infor__movie {
+                    position: absolute;
+                    z-index: 999;
+                    top: 15rem;
+                    left: 5%;
+                    &__full {
+                        margin: 2rem 0;
+                        & .name__movie {
+                            color: white;
+                            font-size: 3.5rem;
+                            font-weight: bolder;
+                        }
+                        &__title {
+                            display: flex;
+                            margin: 1rem 0;
+                            font-size: 1.9rem;
+                            font-weight: bold;
+                            & .gray {
+                                color: #bcbcbc;
+                                margin-right: 1rem;
+                            }
+                            & .white {
+                                color: white;
+                            }
+                        }
+                    }
+                    &__more {
+                        border: none;
+                        padding: 1rem 2.5rem;
+                        border-radius: 0.5rem;
+                        background: #ea6016;
+                        cursor: pointer;
+                        & a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 1.7rem;
+                        }
+                    }
+                    &__more:hover {
+                        background: #b64406;
+                        & a {
+                            color: lightgray;
+                        }
+                    }
+                }
+            }
+        }
+        & .dots {
+            position: absolute;
+            z-index: 999;
+            top: 25rem;
+            right: 10rem;
+            & .dot {
+                width: 0.8rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: gray;
+                margin: 0.5rem;
+            }
+        }
+    }
+    &__hotSeries {
+        position: relative;
+        z-index: 1;
+        top: 60rem;
+        & .hotSeries__header {
+            display: flex;
+            align-items: center;
+            & .hr--hotSeries {
+                width: 0.7rem;
+                height: 4rem;
+                border-radius: 1rem;
+                background: #ea6016;
+                margin: 2rem 1rem 2rem 7rem;
+            }
+            & .hotSeries__title {
+                color: white;
+                font-weight: bolder;
+                font-size: 3rem;
+            }
+        }
+        & .hotSeries__mains {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            & .hotSeries__main {
+                & img {
+                    width: 20rem;
+                }
+                & img:hover {
+                    transform: scale(1.1);
+                    filter: drop-shadow(15px 5px 5px #ea6016);
+                }
+            }
+            & .slick-arrow {
+                background: transparent;
+                color: rgba(192, 188, 188, 0.418);
+                border: none;
+                cursor: pointer;
+                font-size: 5rem;
+                margin: 0 1rem;
+            }
+            & .slick-arrow:hover {
+                color: #ea6016;
+            }
+        }
+    }
+    & .main__hotFilm {
+        position: relative;
+        z-index: 1;
+        top: 85rem;
+        & .hotFilm__header {
+            display: flex;
+            align-items: center;
+            & .hr--hotFilm {
+                width: 0.7rem;
+                height: 4rem;
+                border-radius: 1rem;
+                background: #ea6016;
+                margin: 2rem 1rem 2rem 7rem;
+            }
+            & .hotFilm__title {
+                color: white;
+                font-weight: bolder;
+                font-size: 3rem;
+            }
+            & .icon--right {
+                color: white;
+                font-size: 1.5rem;
+                margin-left: 1rem;
+            }
+            & .icon--right:hover{
+                color: #ea6016;
+            }
+        }
+        & .hotFilm__mains {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            & .hotFilm__main {
+                & img {
+                    width: 20rem;
+                    margin: 0 2rem;
+                }
+                & img:hover {
+                    transform: scale(1.11);
+                    filter: drop-shadow(1px 5px 15px #ea6016);
+                }
+                & .hotFilm__name {
+                    cursor: pointer;
+                    color: white;
+                    margin: 2rem;
+                    font-size: 1.5rem;
+                    overflow: hidden;
+                    height: 2rem;
+                    width: 20rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    font-weight: bold;
+                }
+                & .hotFilm__name:hover{
+                    color: #ea6016;
+                }
+            }
+            & .slick-arrow {
+                background: transparent;
+                color: rgba(192, 188, 188, 0.418);
+                border: none;
+                cursor: pointer;
+                font-size: 3rem;
+                margin: 0 1rem;
+            }
+            & .slick-arrow:hover {
+                color: #ea6016;
+            }
+        }
+    }
+    & .main__hotComic {
+        position: relative;
+        z-index: 1;
+        top: 105rem;
+        & .hotComic__header {
+            display: flex;
+            align-items: center;
+            & .hr--hotComic {
+                width: 0.7rem;
+                height: 4rem;
+                border-radius: 1rem;
+                background: #ea6016;
+                margin: 2rem 1rem 2rem 7rem;
+            }
+            & .hotComic__title {
+                color: white;
+                font-weight: bolder;
+                font-size: 3rem;
+            }
+            & .icon--right {
+                color: white;
+                font-size: 1.5rem;
+                margin-left: 1rem;
+            }
+            & .icon--right:hover{
+                color: #ea6016;
+            }
+        }
+        & .hotComic__mains {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            & .hotComic__main {
+                & img {
+                    width: 20rem;
+                    margin: 0 2rem;
+                }
+                & img:hover {
+                    transform: scale(1.11);
+                    filter: drop-shadow(1px 5px 15px #ea6016);
+                }
+                & .hotComic__name {
+                    cursor: pointer;
+                    color: white;
+                    margin: 2rem;
+                    font-size: 1.5rem;
+                    overflow: hidden;
+                    height: 2rem;
+                    width: 20rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    font-weight: bold;
+                }
+                & .hotComic__name:hover{
+                    color: #ea6016;
+                }
+            }
+            & .slick-arrow {
+                background: transparent;
+                color: rgba(192, 188, 188, 0.418);
+                border: none;
+                cursor: pointer;
+                font-size: 3rem;
+                margin: 0 1rem;
+            }
+            & .slick-arrow:hover {
+                color: #ea6016;
+            }
+        }
+    }
+    & .main__hotComic {
+        position: relative;
+        z-index: 1;
+        top: 105rem;
+        & .hotComic__header {
+            display: flex;
+            align-items: center;
+            & .hr--hotComic {
+                width: 0.7rem;
+                height: 4rem;
+                border-radius: 1rem;
+                background: #ea6016;
+                margin: 2rem 1rem 2rem 7rem;
+            }
+            & .hotComic__title {
+                color: white;
+                font-weight: bolder;
+                font-size: 3rem;
+            }
+            & .icon--right {
+                color: white;
+                font-size: 1.5rem;
+                margin-left: 1rem;
+            }
+            & .icon--right:hover{
+                color: #ea6016;
+            }
+        }
+        & .hotComic__mains {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            & .hotComic__main {
+                & img {
+                    width: 20rem;
+                    margin: 0 2rem;
+                }
+                & img:hover {
+                    transform: scale(1.11);
+                    filter: drop-shadow(1px 5px 15px #ea6016);
+                }
+                & .hotComic__name {
+                    color: white;
+                    margin: 2rem;
+                    font-size: 1.5rem;
+                    overflow: hidden;
+                    height: 2rem;
+                    width: 20rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+            }
+            & .slick-arrow {
+                background: transparent;
+                color: rgba(192, 188, 188, 0.418);
+                border: none;
+                cursor: pointer;
+                font-size: 3rem;
+                margin: 0 1rem;
+            }
+            & .slick-arrow:hover {
+                color: #ea6016;
+            }
+        }
+    }
+    & .main__suggest {
+        position: relative;
+        z-index: 1;
+        top: 20rem;
+        & .suggest__header {
+            display: flex;
+            align-items: center;
+            & .hr--suggest {
+                width: 0.7rem;
+                height: 4rem;
+                border-radius: 1rem;
+                background: #ea6016;
+                margin: 2rem 1rem 2rem 7rem;
+            }
+            & .suggest__title {
+                color: white;
+                font-weight: bolder;
+                font-size: 3rem;
+            }
+            & .icon--right {
+                color: white;
+                font-size: 1.5rem;
+                margin-left: 1rem;
+            }
+            & .icon--right:hover{
+                color: #ea6016;
+            }
+        }
+        & .suggest__mains {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            & .suggest__main {
+                & img {
+                    width: 20rem;
+                    margin: 0 2rem;
+                }
+                & img:hover {
+                    transform: scale(1.1);
+                    filter: drop-shadow(1px 5px 15px #ea6016);
+                }
+                & .suggest__name {
+                    color: white;
+                    margin: 2rem;
+                    font-size: 1.5rem;
+                    overflow: hidden;
+                    height: 2rem;
+                    width: 20rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                & .suggest__name:hover{
+                    color: #ea6016;
+                }
+            }
+            & .slick-arrow {
+                background: transparent;
+                color: rgba(192, 188, 188, 0.418);
+                border: none;
+                cursor: pointer;
+                font-size: 3rem;
+                margin: 0 1rem;
+            }
+            & .slick-arrow:hover {
+                color: #ea6016;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/css__login/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__background">
+        </div>
+        <div class="wrapper__logo">
+            <a href="../../index.html"><img src="../img/pops_logo.png" alt="logo"></a>
+        </div>
+        <div class="wrapper__login">
+            <p class="wrapper__login__header">
+                Login
+            </p>
+            <p class="wrapper__login__title">
+                Create a new account or you can sign in with your POPS Kids account.
+            </p>
+            <div class="wrapper__login__SocialNetwork">
+                <div class="wrapper__login__SocialNetwork--fb">
+                    <img src="../img/img__login/logoFB.png" alt="">
+                </div>
+                <div class="wrapper__login__SocialNetwork--gg">
+                    <img src="../img/img__login/logoGG.png" alt="">
+                </div>
+            </div>
+            <div class="wrapper__login__continue">
+                <hr class="hr hr--left">
+                <p class="continue__title">or Continue with</p>
+                <hr class="hr hr--right">
+            </div>
+            <form class="wrapper__login__input">
+                <input type="text" placeholder="Enter your phone number or email">
+                <input id="input" type="text" placeholder="Password">
+                <span class="eyes" onclick="passwordFunction()">
+                    <i id="show" class="fa-solid fa-eye"></i>
+                    <i id="hide" class="fa-solid fa-eye-slash"></i>
+                </span>
+                <button class="loginBtn">Login</button>
+            </form>
+            <div class="wrapper__login__forgotPass">
+                <a href="#">
+                    Forgot password?
+                </a>
+            </div>
+            <div class="wrapper__login__QR">
+                <img src="../img/img__login/qr-code.png" alt="">
+                <p>Quick login with QR code</p>
+            </div>
+            <div class="wrapper__login__registration">
+                no account?
+                <a href="#">Registration</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script--login.js"></script>
+</body>
+</html>

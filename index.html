@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Slider css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="./source/css/css__main/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pops</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__nav">
+                <img src="./source/img/pops_logo.png">
+                <ul class="header__nav__items">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Children</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Comics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Movie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./source/html/more.html">More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__user">
+                <div class="searchbar">
+                    <div class="input__searchbar">
+                        <input onclick="functionSuggest()" type="text" placeholder="Movie name, anime, comic, actor, artist...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="suggests" id="suggests">
+                        <div class="suggest">
+                            <p class="title">Video</p>
+                            <div class="suggest__names">
+                                <p class="suggest__name">Black Cover</p>
+                                <p class="suggest__name">Naruto Shippuden</p>
+                                <p class="suggest__name">One Piece</p>
+                                <p class="suggest__name">Security Angel</p>
+                                <p class="suggest__name">GroovingOn</p>
+                            </div>
+                        </div>
+                        <div class="suggest">
+                            <p class="title">Comic</p>
+                            <div class="suggest__names">
+                                <p class="suggest__name">BL</p>
+                                <p class="suggest__name">Back Luck</p>
+                                <p class="suggest__name">Price of Haven</p>
+                                <p class="suggest__name">Mama, I meet home</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="user user__login">
+                    <a href="./source/html/login.html">Login</a>
+                </button>
+                <button class="user user__registration">
+                    <a href="./source/html/registration.html">Registration</a>
+                </button>
+                <div class="account" onclick="showAccount()">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="account__setting">
+                        <ul class="account__down" id="account__down">
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-ban"></i>
+                                <p class="item">Buy packet</p>
+                            </li>
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <p class="item">Free data</p>
+                            </li>
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-square-check"></i>
+                                <p class="item">Favorite</p>
+                            </li>
+                            <hr class="hr--account">
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-gear"></i>
+                                <p class="item">Setting</p>
+                            </li>
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-message"></i>
+                                <p class="item">Feedback</p>
+                            </li>
+                            <li class="account__down__item">
+                                <i class="fa-solid fa-address-card"></i>
+                                <p class="item">About our</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__sliders">
+                <ul class="main__slider">
+                    <!-- movie 1 -->
+                    <li class="slider__banner" style="z-index: 0;">
+                        <div class="slider__banner__img">
+                            <img src="./source/img/movie/movie__1/movie--1__poster.png" class="banner__movie">
+                        </div>
+                        <div class="model__overlay"></div>
+                        <div class="infor__movie">
+                            <img src="./source/img/movie/movie__1/movie--1__title.png" alt="">
+                            <div class="infor__movie__full">
+                                <div class="infor__movie__full__title">
+                                    <p class="infor__movie__title gray">Category</p>
+                                    <p class="infor__movie__title white">Comic</p>
+                                </div>
+                                <div class="infor__movie__full__title">
+                                    <p class="infor__movie__title gray">Release year:</p>
+                                    <p class="infor__movie__title white">2020</p>
+                                </div>
+                            </div>
+                            <button class="infor__movie__more">
+                                <a href="#">More</a>
+                            </button>
+                        </div>
+                    </li>
+                    <!-- movie 2 -->
+                    <li class="slider__banner" style="z-index: 1;">
+                        <div class="slider__banner__img">
+                            <img src="./source/img/movie/movie__2/movie--2__poster.png" class="banner__movie">
+                        </div>
+                        <div class="model__overlay"></div>
+                        <div class="infor__movie">
+                            <div class="infor__movie__full">
+                                <p class="name__movie">Great war titan S4 - 27: Great war</p>
+                                <div class="infor__movie__full__title">
+                                    <p class="infor__movie__title gray">Category</p>
+                                    <p class="infor__movie__title white">Anime</p>
+                                </div>
+                                <div class="infor__movie__full__title">
+                                    <p class="infor__movie__title gray">Release year:</p>
+                                    <p class="infor__movie__title white">2020</p>
+                                </div>
+                            </div>
+                            <button class="infor__movie__more">
+                                <a href="#">Watch movie</a>
+                            </button>
+                    </li>
+                    <!-- <li class="slider__banner" style="z-index: 2;">
+                        <div class="slider__banner__img">
+                            <img src="./source/img/movie/movie__3/movie--3__banner.jfif" class="banner__movie">
+                        </div>
+                        <div class="model__overlay"></div>
+                        <div class="infor__movie">
+                            <div class="infor__movie__full">
+                                <p class="name__movie">Naruto Shippuden S20 - Episode 463, 464: Master of Surprise</p>
+                                <div class="infor__movie__full__time">
+                                    <div class="infor__movie__full__time--day">26.03.22</div>
+                                    <div class="infor__movie__full__time--minutes">12:00 - 13:16</div>
+                                </div>
+                                <div class="infor__movie__full__time--countdown">
+                                    
+                                </div>
+                            </div>
+                            <button class="infor__movie__more">
+                                <a href="#">More</a>
+                            </button>
+                    </li> -->
+                </ul>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="main__hotSeries">
+                <div class="hotSeries__header">
+                    <div class="hr--hotSeries"></div>
+                    <p class="hotSeries__title">Hot Series</p>
+                </div>
+                <div class="hotSeries__mains">
+                    <div class="hotSeries__main">
+                        <a href="#">
+                            <img src="./source/img/hotSeries/thumbnail_title-1.png" class="hotSeries">
+                        </a>
+                    </div>
+                    <div class="hotSeries__main">
+                        <a href="#">
+                            <img src="./source/img/hotSeries/aot_thumbnail_title-2.png" class="hotSeries">
+                        </a>
+                    </div>
+                    <div class="hotSeries__main">
+                        <a href="#">
+                            <img src="./source/img/hotSeries/thumbnail_title-3.png" class="hotSeries">
+                        </a>
+                    </div>
+                    <div class="hotSeries__main">
+                        <a href="#">
+                            <img src="./source/img/hotSeries/thumbnail_title-4.png" class="hotSeries">
+                        </a>
+                    </div>
+                    <div class="hotSeries__main">
+                        <a href="#">
+                            <img src="./source/img/hotSeries/thumbnail_title-5.png" class="hotSeries">
+                        </a>
+                    </div>
+                    <div class="hotSeries__main">
+                        <a href="#">
+                            <img src="./source/img/hotSeries/thumbnail_title-6.png" class="hotSeries">
+                        </a>
+                    </div>
+                    <div class="hotSeries__main">
+                        <a href="#">
+                            <img src="./source/img/hotSeries/thumbnail_title-7.png" class="hotSeries">
+                        </a>
+                    </div>
+                    <div class="hotSeries__main">
+                        <a href="#">
+                            <img src="./source/img/hotSeries/klthumbnail_tittle-8.png" class="hotSeries">
+                        </a>
+                    </div>
+                    <div class="hotSeries__main">
+                        <a href="#">
+                            <img src="./source/img/hotSeries/thumbnail_title-9.png" class="hotSeries">
+                        </a>
+                    </div>
+                    <div class="hotSeries__main">
+                        <a href="#">
+                            <img src="./source/img/hotSeries/thumbail-title-10.png" class="hotSeries">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- main hot film -->
+            <div class="main__hotFilm">
+                <div class="hotFilm__header">
+                    <div class="hr--hotFilm"></div>
+                    <p class="hotFilm__title">Demon Slayer: Kimetsu no Yaiba S2</p>
+                    <a href="#" class="icon--right"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="hotFilm__mains">
+                    <div class="hotFilm__main">
+                        <a href="#">
+                            <img src="./source/img/hotFilm/film-1.jpg" alt="">
+                        </a>
+                        <p class="hotFilm__name">Demon Slayer: Kimetsu no Yaiba S2 - Chapter 1</p>
+                    </div>
+                    <div class="hotFilm__main">
+                        <a href="#">
+                            <img src="./source/img/hotFilm/film-2.jpg" alt="">
+                        </a>
+                        <p class="hotFilm__name">Demon Slayer: Kimetsu no Yaiba S2 - Chapter 2</p>
+                    </div>
+                    <div class="hotFilm__main">
+                        <a href="#">
+                            <img src="./source/img/hotFilm/film-3.jpg" alt="">
+                        </a>
+                        <p class="hotFilm__name">Demon Slayer: Kimetsu no Yaiba S2 - Chapter 3</p>
+                    </div>
+                    <div class="hotFilm__main">
+                        <a href="#">
+                            <img src="./source/img/hotFilm/film-4.jpg" alt="">
+                        </a>
+                        <p class="hotFilm__name">Demon Slayer: Kimetsu no Yaiba S2 - Chapter 4</p>
+                    </div>
+                    <div class="hotFilm__main">
+                        <a href="#">
+                            <img src="./source/img/hotFilm/film-5.jpg" alt="">
+                        </a>
+                        <p class="hotFilm__name">Demon Slayer: Kimetsu no Yaiba S2 - Chapter 5</p>
+                    </div>
+                    <div class="hotFilm__main">
+                        <a href="#">
+                            <img src="./source/img/hotFilm/film-6.jpg" alt="">
+                        </a>
+                        <p class="hotFilm__name">Demon Slayer: Kimetsu no Yaiba S2 - Chapter 6</p>
+                    </div>
+                    <div class="hotFilm__main">
+                        <a href="#">
+                            <img src="./source/img/hotFilm/film-7.jpg" alt="">
+                        </a>
+                        <p class="hotFilm__name">Demon Slayer: Kimetsu no Yaiba S2 - Chapter 7</p>
+                    </div>
+                    <div class="hotFilm__main">
+                        <a href="#">
+                            <img src="./source/img/hotFilm/film-8.jpg" alt="">
+                        </a>
+                        <p class="hotFilm__name">Demon Slayer: Kimetsu no Yaiba S2 - Chapter 8</p>
+                    </div>
+                    <div class="hotFilm__main">
+                        <a href="#">
+                            <img src="./source/img/hotFilm/film-9.jpg" alt="">
+                        </a>
+                        <p class="hotFilm__name">Demon Slayer: Kimetsu no Yaiba S2 - Chapter 9</p>
+                    </div>
+                    <div class="hotFilm__main">
+                        <a href="#">
+                            <img src="./source/img/hotFilm/film-10.jpg" alt="">
+                        </a>
+                        <p class="hotFilm__name">Demon Slayer: Kimetsu no Yaiba S2 - Chapter 10</p>
+                    </div>
+                </div>
+            </div>
+            <!-- main hot comic -->
+            <div class="main__hotComic">
+                <div class="hotComic__header">
+                    <div class="hr--hotComic"></div>
+                    <p class="hotComic__title">Synthesize "Of" Growers</p>
+                    <a href="#" class="icon--right"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="hotComic__mains">
+                    <div class="hotComic__main">
+                        <a href="#">
+                            <img src="./source/img/hotComics/comic-1.jpg" alt="">
+                        </a>
+                        <p class="hotComic__name">Petals Floating Between Royal Court S3</p>
+                    </div>
+                    <div class="hotComic__main">
+                        <a href="#">
+                            <img src="./source/img/hotComics/comic-2.jpg" alt="">
+                        </a>
+                        <p class="hotComic__name">Comic My Boss Is a Dog</p>
+                    </div>
+                    <div class="hotComic__main">
+                        <a href="#">
+                            <img src="./source/img/hotComics/comic-3.jpg" alt="">
+                        </a>
+                        <p class="hotComic__name">Queen Doctor S1 - Trailer</p>
+                    </div>
+                    <div class="hotComic__main">
+                        <a href="#">
+                            <img src="./source/img/hotComics/comic-4.jfif" alt="">
+                        </a>
+                        <p class="hotComic__name">Petals Floating Between the Royal Court</p>
+                    </div>
+                    <div class="hotComic__main">
+                        <a href="#">
+                            <img src="./source/img/hotComics/comic-5.jpg" alt="">
+                        </a>
+                        <p class="hotComic__name">My Brother Is A Dinosaur</p>
+                    </div>
+                    <div class="hotComic__main">
+                        <a href="#">
+                            <img src="./source/img/hotComics/comic-6.jpg" alt="">
+                        </a>
+                        <p class="hotComic__name">The Villain's Survival Diary - Trailer</p>
+                    </div>
+                    <div class="hotComic__main">
+                        <a href="#">
+                            <img src="./source/img/hotComics/comic-7.jpg" alt="">
+                        </a>
+                        <p class="hotComic__name">Bad Luck S1 - Trailer</p>
+                    </div>
+                    <div class="hotComic__main">
+                        <a href="#">
+                            <img src="./source/img/hotComics/comic-8.jpg" alt="">
+                        </a>
+                        <p class="hotComic__name">PROJECT LAC TRIPS | TRAILER</p>
+                    </div>
+                </div>
+                <!-- main suggest -->
+                <div class="main__suggest">
+                    <div class="suggest__header">
+                        <div class="hr--suggest"></div>
+                        <p class="suggest__title">Maybe you are interested</p>
+                        <a href="#" class="icon--right"><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="suggest__mains">
+                        <div class="suggest__main">
+                            <a href="#">
+                                <img src="./source/img/suggest/img-1.png" alt="">
+                            </a>
+                            <p class="suggest__name">Demon Slayer: Kimetsu no Yaiba</p>
+                        </div>
+                        <div class="suggest__main">
+                            <a href="#">
+                                <img src="./source/img/suggest/img-2.png" alt="">
+                            </a>
+                            <p class="suggest__name">Detective Conan - Famous Detective Conan</p>
+                        </div>
+                        <div class="suggest__main">
+                            <a href="#">
+                                <img src="./source/img/suggest/img-3.png" alt="">
+                            </a>
+                            <p class="suggest__name">Naruto Shippuden</p>
+                        </div>
+                        <div class="suggest__main">
+                            <a href="#">
+                                <img src="./source/img/suggest/img-4.png" alt="">
+                            </a>
+                            <p class="suggest__name">My Brother Is A T-Rex - Chapter 1</p>
+                        </div>
+                        <div class="suggest__main">
+                            <a href="#">
+                                <img src="./source/img/suggest/img5.png" alt="">
+                            </a>
+                            <p class="suggest__name">Flower Of Dynasties - Chapter 2</p>
+                        </div>
+                        <div class="suggest__main">
+                            <a href="#">
+                                <img src="./source/img/suggest/img-6.png" alt="">
+                            </a>
+                            <p class="suggest__name">Villain's Survival Diary</p>
+                        </div>
+                        <div class="suggest__main">
+                            <a href="#">
+                                <img src="./source/img/suggest/img-7.png" alt="">
+                            </a>
+                            <p class="suggest__name">Attack On Titan</p>
+                        </div>
+                        <div class="suggest__main">
+                            <a href="#">
+                                <img src="./source/img/suggest/img-8.png" alt="">
+                            </a>
+                            <p class="suggest__name">One Piece</p>
+                        </div>
+                        <div class="suggest__main">
+                            <a href="#">
+                                <img src="./source/img/suggest/img-9.png" alt="">
+                            </a>
+                            <p class="suggest__name">Bad Luck</p>
+                        </div>
+                        <div class="suggest__main">
+                            <a href="#">
+                                <img src="./source/img/suggest/img-10.png" alt="">
+                            </a>
+                            <p class="suggest__name">Floating</p>
+                        </div>
+                    </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <hr class="hr--footer">
+                <div class="footer__top__header">Home</div>
+                <div class="footer__top__title">100% copyrighted entertainment application with hot and diverse movie
+                    store.
+                    POPS brings you the latest good movies, anime cartoons, comedies, comics.
+                </div>
+            </div>
+            <div class="footer__main">
+                <div class="footer__main__top">
+                    <div class="introduction">
+                        <img src="./source/img/pops_logo.png">
+                        <p class="introduction__title">A social network that shares high-quality entertainment video
+                            content, suitable for all ages and safe for children.
+                        </p>
+                        <div class="introduction__link">
+                            <img src="./source/img/link--network/appstore.png">
+                            <img src="./source/img/link--network/googleplay.png">
+                            <img src="./source/img/link--network/smartTV.png">
+                        </div>
+                    </div>
+                    <div class="content--nav">
+                        <div class="mature__content">
+                            <h3 class="mature__content__header">MATURE CONTENT</h3>
+                            <div class="mature__content__big__items">
+                                <ul class="mature__content__items left">
+                                    <li class="mature__content__items__item">Home</li>
+                                    <li class="mature__content__items__item">Comic</li>
+                                    <li class="mature__content__items__item">Original</li>
+                                    <li class="mature__content__items__item">Anime</li>
+                                    <li class="mature__content__items__item">Show</li>
+                                </ul>
+                                <ul class="mature__content__items right">
+                                    <li class="mature__content__items__item">Music</li>
+                                    <li class="mature__content__items__item">Series</li>
+                                    <li class="mature__content__items__item">Children</li>
+                                    <li class="mature__content__items__item">Blog</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="children__content">
+                            <h3 class="children__content__header">CHILDREN CONTENT</h3>
+                            <ul class="children__content__items">
+                                <li class="children__content__items__item">Home</li>
+                                <li class="children__content__items__item">Music</li>
+                                <li class="children__content__items__item">Original</li>
+                                <li class="children__content__items__item">Education</li>
+                                <li class="children__content__items__item">Blog children</li>
+                            </ul>
+                        </div>
+                        <div class="support">
+                            <h3 class="support__header">SUPPORT</h3>
+                            <ul class="support__items">
+                                <li class="support__items__item">FAQs</li>
+                                <li class="support__items__item">Privacy Policy</li>
+                                <li class="support__items__item">Terms and Conditions of Use</li>
+                                <li class="support__items__item">Terms of payment</li>
+                                <li class="support__items__item">Complaint Handling Policy and Procedure</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <p class="information__header">VIETNAM PHU SIOC JOINT STOCK COMPANY</p>
+                        <p class="information__item address">Address: 4th Floor, Block A, Viettel Complex Tower, 285 Cach Mang Thang Tam, Ward 12, District 10, Ho Chi Minh City</p>
+                        <p class="information__item phone">Number-phone: +84 (28) 62921652</p>
+                        <p class="information__item email">Email: popsapp-support@popsww.com</p>
+                    </div>
+                </div>
+                <hr class="hr--footer">
+                <div class="footer__main__bottom">
+                    <div class="title">
+                        <p class="line">Person responsible for the content: Dinh Thi Hong Hoa</p>
+                        <p class="line">Business registration certificate number 0305709591 issued by the Department of Planning and Investment of Ho Chi Minh City. Ho Chi Minh City issued on May 21, 2008</p>
+                        <p class="line">License to establish a social network No. 63/GP-BTTTT issued by the Ministry of Information and Communications on 22/02/2019</p>
+                        <p class="line">© 2018 POPS Worldwide. All copyrights belong to POPS Worldwide.</p>
+                    </div>
+                    <img src="./source/img/footer.png" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Js slider -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Js -->
+    <script src="./source/js/script--main.js"></script>
+</body>
+</html>

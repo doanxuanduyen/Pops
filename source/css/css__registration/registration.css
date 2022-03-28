@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  text-transform: capitalize;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  position: relative;
+}
+.wrapper__background {
+  background: url(../../img/img__login/bg_login.jpg);
+  background-size: cover;
+  height: 100vh;
+  filter: brightness(0.15);
+}
+.wrapper__logo {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 5rem;
+}
+.wrapper__logo img {
+  height: 6rem;
+}
+.wrapper__registration {
+  position: absolute;
+  top: 7rem;
+  left: 55rem;
+  background: #242424;
+  height: 50rem;
+  width: 30rem;
+  border-radius: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  padding: 4rem 5rem 6em 5rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.wrapper__registration__header {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #ea6016;
+}
+.wrapper__registration__title {
+  margin: 1.5rem 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.7rem;
+}
+.wrapper__registration__SocialNetwork {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.wrapper__registration__SocialNetwork img {
+  background: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+.wrapper__registration__continue {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+.wrapper__registration__continue hr {
+  width: 7rem;
+  height: 0.1rem;
+  border: none;
+  background-color: grey;
+  margin: 0 1rem;
+}
+.wrapper__registration__input {
+  position: relative;
+}
+.wrapper__registration__input input {
+  height: 3rem;
+  width: 25rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.4rem;
+  background: #414040;
+  color: white;
+  outline: transparent;
+  border: none;
+  caret-color: #ea6016;
+  margin: 1rem 0;
+  position: relative;
+}
+.wrapper__registration__input input::placeholder {
+  color: gray;
+}
+.wrapper__registration__input input:focus {
+  outline-style: solid;
+  outline-color: #ea6016;
+}
+.wrapper__registration__input .eyes {
+  color: whitesmoke;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-200%, 150%);
+}
+.wrapper__registration__input .eyes #hide {
+  display: none;
+}
+.wrapper__registration__input .Btn {
+  border: none;
+  margin-top: 1rem;
+  background: #929292;
+  color: white;
+  width: 27rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+.wrapper__registration__input .Btn:hover {
+  box-shadow: 0 0 14px -1px orange;
+}
+.wrapper__registration__term {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: gray;
+}
+.wrapper__registration__term a {
+  text-decoration: none;
+  color: #ea6016;
+}
+.wrapper__registration__login {
+  color: gray;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.wrapper__registration__login a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #ea6016;
+}
+
+/*# sourceMappingURL=registration.css.map */

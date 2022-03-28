@@ -1,0 +1,65 @@
+@import "../scss__basic/reset";
+@import "../scss__basic/variable";
+@import "../scss__main/header";
+@import"../scss__main/footer";
+
+.wrapper{
+    height: 200vh;
+    .main {
+        position: absolute;
+        top: 15rem;
+        left: 5rem;
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+            &__item {
+                position: relative;
+                border-radius: 0.5rem;
+                width: 45rem;
+                height: 20rem;
+                transition: 0.3s;
+                margin: 1.5rem;
+                & img {
+                    width: 45rem;
+                    height: 20rem;
+                    object-fit: cover;
+                    border-radius: 0.5rem;
+                }
+                & .overlay__modem {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 20rem;
+                    background-image: linear-gradient(90deg,#242424 0,rgba(36,36,36,.52) 76%,rgba(0,0,0,.52));
+                }
+                &__title{
+                    position: absolute;
+                    top: 3rem;
+                    left: 2rem;
+                    color: white;
+                    width: 30rem;
+                    &__header{
+                        font-size: 3rem;
+                        font-weight: bolder;
+                    }
+                    &__sub{
+                        font-size: 1.2rem;
+                        line-height: 1.5;
+                        color: lightgray;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+            &__item:hover {
+                filter: drop-shadow(1px 5px 15px #ea6016);
+                overflow: hidden;
+                img{
+                    transform: scale(1.1);
+                }
+            }  
+        }
+    }
+    .footer{
+        top: 100rem;
+    }    
+}

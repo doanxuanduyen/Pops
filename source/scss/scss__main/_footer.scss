@@ -1,0 +1,148 @@
+@import"../scss__basic/reset";
+@import"../scss__basic/variable";
+
+.footer{
+    color: white;
+    position: absolute;
+    top: 200rem;
+    width: 100%;
+    font-weight: bold;
+    & .hr--footer{
+        width: 140rem;
+        border: none;
+        background: rgba(255, 255, 255, 0.301);
+        height: 0.1rem;
+        margin-top: 2rem;
+    }
+    & .footer__top{
+        margin: 2rem 1rem 5rem 1rem;
+        padding: 0 5rem;
+        &__header{
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 1rem 0 0 0;
+        }
+        &__title{
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: rgb(145, 145, 145);
+        }
+    }
+    & .footer__main{
+        background: #1F1F1F;
+        padding: 2rem 5rem;
+        &__top{
+            display: grid;
+            grid-template-columns: 4fr 7fr 4fr;
+            gap: 2rem;
+            line-height: 1.5;
+            & .introduction{
+                & img{
+                    height: 7rem;
+                    transform: translate(-10%);
+                }
+                &__title{
+                    margin: .5rem 0;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                }
+                &__link img{
+                    height: 3rem;
+                    text-align: center;
+                    object-fit: fill;
+                    margin: 1rem;
+                }
+            }
+            & .content--nav{
+                display: flex;
+                & .mature__content{
+                    margin-top: 3rem;
+                    font-size: 1.4rem;
+                    &__header{
+                        color: lightgray;
+                        margin: 0;
+                    }
+                    &__big__items{
+                        display: flex;
+                    }
+                    &__items{
+                        list-style-type: none;
+                        padding: 0;
+                        margin-right: 5rem;
+                        margin-top: 1rem;
+                        &__item{
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+                & .children__content{
+                    margin-top: 3rem;
+                    font-size: 1.4rem;
+                    margin-right: 2rem;
+                    &__header{
+                        color: lightgray;
+                        margin: 0;
+                    }
+                    &--nav{
+                        display: flex;
+                    }
+                    &__items{
+                        list-style-type: none;
+                        padding: 0;
+                        margin-right: 8rem;
+                        margin-top: 1rem;
+                        &__item{
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+                & .support{
+                    margin-top: 3rem;
+                    font-size: 1.4rem;
+                    &__header{
+                        color: lightgray;
+                        margin: 0;
+                    }
+                    &__items{
+                        list-style-type: none;
+                        padding: 0;
+                        margin-top: 1rem;
+                        &__item{
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+            & .information{
+                margin: 3rem;
+                &__item{
+                    font-size: 1.2rem;
+                    margin: 1rem 0;
+                }
+                &__header{
+                    font-size: 1.5rem;
+                    color: lightgray;
+                }
+                & .email{
+                    color: #EA6016;
+                    cursor: pointer;
+                }
+            }
+        }
+        &__bottom{
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            & .title{
+                margin-top: 1rem;
+                font-size: 1.2rem;
+                & .line{
+                    margin: 0.5rem 0;
+                }
+            }
+            & img{
+                margin-left: auto;
+            }
+        }
+    }
+}
