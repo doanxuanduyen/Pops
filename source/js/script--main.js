@@ -48,6 +48,16 @@ $(document).ready(function () {
     });
 });
 
+//slider-movie
+$(document).ready(function () {
+    $('.film__mains').slick({
+        slidesToShow: 4,
+        slidesToScroll: 5,
+        prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+    });
+});
+
 //input 
 function functionSuggest(){
     document.getElementById("suggests").style.display = "block";

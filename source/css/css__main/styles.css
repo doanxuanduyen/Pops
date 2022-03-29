@@ -432,7 +432,7 @@ h1, p, ul {
 }
 .main .main__hotFilm .hotFilm__mains .hotFilm__main img {
   width: 20rem;
-  margin: 0 2rem;
+  margin: 2rem;
 }
 .main .main__hotFilm .hotFilm__mains .hotFilm__main img:hover {
   transform: scale(1.11);
@@ -502,7 +502,7 @@ h1, p, ul {
 }
 .main .main__hotComic .hotComic__mains .hotComic__main img {
   width: 20rem;
-  margin: 0 2rem;
+  margin: 2rem;
 }
 .main .main__hotComic .hotComic__mains .hotComic__main img:hover {
   transform: scale(1.11);
@@ -572,7 +572,7 @@ h1, p, ul {
 }
 .main .main__hotComic .hotComic__mains .hotComic__main img {
   width: 20rem;
-  margin: 0 2rem;
+  margin: 2rem;
 }
 .main .main__hotComic .hotComic__mains .hotComic__main img:hover {
   transform: scale(1.11);
@@ -637,10 +637,10 @@ h1, p, ul {
 }
 .main .main__suggest .suggest__mains .suggest__main img {
   width: 20rem;
-  margin: 0 2rem;
+  margin: 2rem;
 }
 .main .main__suggest .suggest__mains .suggest__main img:hover {
-  transform: scale(1.11);
+  transform: scale(1.1);
   filter: drop-shadow(1px 5px 15px #ea6016);
 }
 .main .main__suggest .suggest__mains .suggest__main .suggest__name {

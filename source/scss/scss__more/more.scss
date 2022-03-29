@@ -19,11 +19,14 @@
                 height: 20rem;
                 transition: 0.3s;
                 margin: 1.5rem;
+                overflow: hidden;
+                transition: all 0.3s linear;
                 & img {
                     width: 45rem;
                     height: 20rem;
                     object-fit: cover;
                     border-radius: 0.5rem;
+                    transition: all 0.3s linear;
                 }
                 & .overlay__modem {
                     position: absolute;
@@ -52,7 +55,6 @@
             }
             &__item:hover {
                 filter: drop-shadow(1px 5px 15px #ea6016);
-                overflow: hidden;
                 img{
                     transform: scale(1.1);
                 }

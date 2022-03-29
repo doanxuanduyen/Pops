@@ -1,4 +1,155 @@
 @import "../scss__basic/reset";
 @import "../scss__basic/variable";
 @import "../scss__main/header";
-@import"../scss__main/footer";
+@import "../scss__main/footer";
+
+.main {
+    margin: 0 10rem;
+    text-transform: none;
+    & .video {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        & video {
+            margin-top: 15rem;
+            width: 130rem;
+            height: 50rem;
+        }
+    }
+    & .infor__video {
+        color: white;
+        padding: 1rem;
+        &__series {
+            font-size: 1.7rem;
+            margin-top: 1rem;
+            color: #ea6016;
+            font-weight: bold;
+            & i {
+                margin-right: 0.5rem;
+            }
+        }
+        &__top {
+            display: flex;
+            & .icon__interactive {
+                margin-left: auto;
+                display: flex;
+                & .icon__item {
+                    margin: 0 1rem;
+                    font-size: 1.2rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    & i {
+                        margin-bottom: 1.5rem;
+                        font-size: 2rem;
+                    }
+                }
+                & .icon__item:hover {
+                    color: lightgray;
+                }
+            }
+        }
+        & .hr--movie {
+            margin: 3rem 0;
+            background-color: rgba(255, 255, 255, 0.438);
+            height: 0.01rem;
+            border: none;
+        }
+        &__bottom {
+            font-size: 1.5rem;
+            line-height: 1.5;
+            & .content__video {
+                display: flex;
+                &__main {
+                    width: 60%;
+                    padding-right: 25rem;
+                    &--gray {
+                        color: lightgray;
+                    }
+                }
+                &__infor{
+                    &__item{
+                        margin-bottom: 1rem;
+                        &--gray{
+                            color: lightgray;
+                        }
+                        & .orange{
+                            color: #ea6016;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .main__film {
+        & .film__header {
+            display: flex;
+            align-items: center;
+            & .hr--film {
+                width: 0.7rem;
+                height: 4rem;
+                border-radius: 1rem;
+                background: #ea6016;
+                margin: 2rem 1rem 2rem 7rem;
+            }
+            & .film__title {
+                color: white;
+                font-weight: bolder;
+                font-size: 3rem;
+            }
+            & .icon--right {
+                color: white;
+                font-size: 1.5rem;
+                margin-left: 1rem;
+            }
+            & .icon--right:hover{
+                color: #ea6016;
+            }
+        }
+        & .film__mains {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            & .film__main {
+                & img {
+                    width: 20rem;
+                    margin: 0 2rem;
+                }
+                & img:hover {
+                    transform: scale(1.11);
+                    filter: drop-shadow(1px 5px 15px #ea6016);
+                }
+                & .film__name {
+                    cursor: pointer;
+                    color: white;
+                    margin: 2rem;
+                    font-size: 1.5rem;
+                    overflow: hidden;
+                    height: 2rem;
+                    width: 20rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    font-weight: bold;
+                }
+                & .film__name:hover{
+                    color: #ea6016;
+                }
+            }
+            & .slick-arrow {
+                background: transparent;
+                color: rgba(192, 188, 188, 0.418);
+                border: none;
+                cursor: pointer;
+                font-size: 3rem;
+                margin: 0 1rem;
+            }
+            & .slick-arrow:hover {
+                color: #ea6016;
+            }
+        }
+    }
+}
